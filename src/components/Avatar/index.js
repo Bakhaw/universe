@@ -4,7 +4,7 @@ function Avatar() {
   return (
     <img
       alt="Me"
-      className="h-80 w-80 sm:h-96 sm:w-96 max-w-none object-cover rounded-full border-2 border-very-dark-blue"
+      className="shrink-0 h-80 w-80 lg:h-96 lg:w-96 max-w-none object-cover rounded-full border-4 border-very-dark-blue bg-very-dark-blue"
       src={AvatarImg}
     />
   );

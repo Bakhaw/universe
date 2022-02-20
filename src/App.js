@@ -3,10 +3,10 @@ import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <div className="universe font-serif text-very-dark-blue">
+    <div className="font-serif text-very-dark-blue">
       <Navbar />
 
-      <div className="px-5 sm:px-20">
+      <div className="px-5 lg:px-20">
         <Bio />
       </div>
     </div>
