@@ -28,7 +28,7 @@ function Navbar() {
         </div>
       )}
 
-      <Modal isOpen={isMenuOpen} onClose={closeMenu} />
+      <Modal closeMenu={closeMenu} isOpen={isMenuOpen} />
     </>
   );
 }
