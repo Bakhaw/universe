@@ -18,7 +18,7 @@ function Navbar() {
   return (
     <>
       {!isMenuOpen && (
-        <div className="pl-20 pt-20">
+        <div className="pl-10 pt-10 sm:pl-20 sm:pt-20">
           <img
             alt="Menu"
             className="h-9 w-9 cursor-pointer"

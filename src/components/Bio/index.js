@@ -26,16 +26,16 @@ const socialsList = [
 
 function Bio() {
   return (
-    <section className="flex flex-col justify-between h-bio">
+    <section className="flex flex-col justify-between h-bio-mobile sm:h-bio">
       {/* Terrible practice to add extra item so my content is centered with space-between :clown: */}
       <div />
-      <div className="flex justify-center items-center gap-24">
+      <div className="flex flex-col justify-center items-center gap-12 sm:gap-24 sm:flex-row">
         <Avatar />
         <div className="flex flex-col items-center gap-6">
           <div>
-            <h1 className="text-8xl">Faïssal Hattou</h1>
-            <h2 className="text-4xl">web developer</h2>
-            <h2 className="text-4xl">all around the world</h2>
+            <h1 className="text-6xl sm:text-8xl">Faïssal Hattou</h1>
+            <h2 className="text-3xl sm:text-4xl">web developer</h2>
+            <h2 className="text-3xl sm:text-4xl">all around the world</h2>
           </div>
 
           <Divider />
