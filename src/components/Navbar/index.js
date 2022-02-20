@@ -1,27 +1,35 @@
 import { useState } from "react";
 
-import CloseIcon from "../../assets/icons/close.svg";
 import MenuIcon from "../../assets/icons/menu.svg";
 
+import Modal from "./Modal";
+
 function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   function closeMenu() {
-    setIsOpen(false);
+    setIsMenuOpen(false);
   }
 
   function openMenu() {
-    setIsOpen(true);
+    setIsMenuOpen(true);
   }
 
   return (
-    <div>
-      {isOpen ? (
-        <img alt="Close" onClick={closeMenu} src={CloseIcon} />
-      ) : (
-        <img alt="Menu" onClick={openMenu} src={MenuIcon} />
+    <>
+      {!isMenuOpen && (
+        <div className="pl-20 pt-20">
+          <img
+            alt="Menu"
+            className="h-9 w-9 cursor-pointer"
+            onClick={openMenu}
+            src={MenuIcon}
+          />
+        </div>
       )}
-    </div>
+
+      <Modal isOpen={isMenuOpen} onClose={closeMenu} />
+    </>
   );
 }
 
