@@ -6,7 +6,7 @@ function App() {
     <div className="universe font-serif text-very-dark-blue">
       <Navbar />
 
-      <div className="px-10 sm:px-20">
+      <div className="px-5 sm:px-20">
         <Bio />
       </div>
     </div>

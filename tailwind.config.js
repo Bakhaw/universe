@@ -16,6 +16,9 @@ module.exports = {
         "bio-mobile": "calc(100vh - 76px)", // 76px = (MOBILE) Navbar height + Navbar padding-top
         bio: "calc(100vh - 116px)", // 116px = (> MOBILE) Navbar height + Navbar padding-top
       },
+      minHeight: {
+        "bio-mobile": "calc(100vh - 76px)", // 76px = (MOBILE) Navbar height + Navbar padding-top
+      },
     },
   },
   plugins: [],
