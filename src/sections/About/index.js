@@ -12,7 +12,7 @@ function About() {
     <Section id="about">
       <Title>About</Title>
 
-      <div className="flex flex-col-reverse lg:flex-row justify-center items-center gap-6 lg:gap-20 text-center">
+      <div className="flex flex-col-reverse lg:flex-row justify-center items-center gap-6 lg:gap-20 text-center px-5">
         <div className="flex flex-col justify-center items-center gap-10 max-w-xl">
           <h2 className="text-4xl lg:text-5xl">« Focus on improve 🚀 »</h2>
           <p className="text-2xl lg:text-3xl">

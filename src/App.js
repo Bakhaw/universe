@@ -14,7 +14,7 @@ function App() {
         <Navbar />
       </div>
 
-      <div className="flex flex-col gap-40 px-0 lg:px-0">
+      <div className="flex flex-col gap-40">
         <Bio />
         <About />
         <Skills />
