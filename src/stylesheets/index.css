@@ -3,5 +3,11 @@
 @tailwind utilities;
 
 body {
-  background: linear-gradient(359.65deg, #d6a4a4 0.3%, #dae2f8 99.69%);
+  /* background: linear-gradient(359.65deg, #d6a4a4 0.3%, #dae2f8 99.69%); */
+  background: linear-gradient(
+    359.65deg,
+    #9796f0 0.3%,
+    #fbc7d4 51.03%,
+    #ffd0b3 99.69%
+  );
 }
