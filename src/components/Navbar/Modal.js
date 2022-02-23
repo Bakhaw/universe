@@ -1,8 +1,6 @@
 import CloseIcon from "../../assets/icons/close.svg";
 
 function Navbar({ closeMenu, isOpen }) {
-  function handleLinkClick() {}
-
   if (!isOpen) return null;
 
   return (
