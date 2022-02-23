@@ -42,8 +42,14 @@ function Contact() {
       <div className="flex flex-col justify-center items-center gap-6">
         <div className="flex flex-col justify-center items-center gap-3">
           <h1 className="text-6xl">Let's talk !</h1>
-          <span className="text-2xl">faissal.hattou@gmail.com</span>
-          <span className="text-2xl">(+33) 6 34 16 18 66</span>
+          <span className="text-2xl">
+            <a href="mailto:faissal.hattou@gmail.com">
+              faissal.hattou@gmail.com
+            </a>
+          </span>
+          <span className="text-2xl">
+            <a href="tel:+33634161866">(+33) 6 34 16 18 66</a>
+          </span>
         </div>
 
         <Divider />
