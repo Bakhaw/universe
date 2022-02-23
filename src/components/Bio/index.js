@@ -26,7 +26,10 @@ const socialsList = [
 
 function Bio() {
   return (
-    <section className="flex flex-col justify-between h-bio-mobile lg:h-bio">
+    <section
+      id="bio"
+      className="flex flex-col justify-between h-bio-mobile lg:h-bio"
+    >
       {/* Terrible practice to add extra item so my content is centered with space-between :clown: */}
       <div />
       <div className="flex flex-col justify-center items-center gap-6 lg:gap-24 lg:flex-row">

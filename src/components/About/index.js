@@ -17,8 +17,8 @@ function About() {
     >
       <h1 className="text-5xl lg:text-6xl">About</h1>
 
-      <div className="flex flex-col-reverse lg:flex-row justify-center items-center gap-6 lg:gap-0 text-center">
-        <div className="flex flex-col justify-center items-center flex-1 gap-10">
+      <div className="flex flex-col-reverse lg:flex-row justify-center items-center gap-6 lg:gap-20 text-center">
+        <div className="flex flex-col justify-center items-center gap-10 max-w-xl">
           <h2 className="text-4xl lg:text-5xl">« Focus on improve 🚀 »</h2>
           <p className="text-2xl lg:text-3xl">
             Grand passionné du code et du JavaScript, en relation sérieuse avec
@@ -29,7 +29,7 @@ function About() {
             forgé mon autonomie et m'a donné les clés pour apprendre seul,
             efficacement et rapidement.
           </p>
-          <ul className="flex flex-wrap justify-center items-center gap-3 w-3/4">
+          <ul className="flex flex-wrap justify-center items-center gap-3 w-full lg:w-3/4">
             {chipList.map((chip, i) => (
               <li key={i}>
                 <Chip label={chip} />
@@ -38,8 +38,12 @@ function About() {
           </ul>
         </div>
 
-        <div className="flex flex-1 justify-center items-center">
-          <img alt="Me during work" className="w-96" src={AboutIllustration} />
+        <div className="flex justify-center items-center">
+          <img
+            alt="Me during work"
+            className="w-96 lg:w-[560px]"
+            src={AboutIllustration}
+          />
         </div>
       </div>
     </section>
