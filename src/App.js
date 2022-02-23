@@ -1,8 +1,10 @@
-import About from "./components/About";
-import Bio from "./components/Bio";
-import Contact from "./components/Contact";
+import BackToTop from "./components/BackToTop";
 import Navbar from "./components/Navbar";
-import Skills from "./components/Skills";
+
+import About from "./sections/About";
+import Bio from "./sections/Bio";
+import Contact from "./sections/Contact";
+import Skills from "./sections/Skills";
 
 function App() {
   return (
@@ -19,9 +21,7 @@ function App() {
         <Contact />
       </div>
 
-      <div className="text-center py-20">
-        <a href="#top">Back to top</a>
-      </div>
+      <BackToTop />
     </div>
   );
 }

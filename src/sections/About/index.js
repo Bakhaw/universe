@@ -1,21 +1,16 @@
+import { softSkillsList } from "../../data/softSkillsList";
+
 import AboutIllustration from "../../assets/images/about-illustration.svg";
 
-import Chip from "../Chip";
-
-const chipList = [
-  "professionnel curieux",
-  "esprit d'équipe",
-  "force de proposition",
-  "et qui apporte toujours la rondelle de citron dans le Coca (la bonne humeur)",
-];
+import Chip from "../../components/Chip";
+import Illustration from "../../components/Illustration";
+import Section from "../../components/Section";
+import Title from "../../components/Title";
 
 function About() {
   return (
-    <section
-      id="about"
-      className="flex flex-col justify-center items-center gap-20"
-    >
-      <h1 className="text-5xl lg:text-6xl">About</h1>
+    <Section id="about">
+      <Title>About</Title>
 
       <div className="flex flex-col-reverse lg:flex-row justify-center items-center gap-6 lg:gap-20 text-center">
         <div className="flex flex-col justify-center items-center gap-10 max-w-xl">
@@ -30,7 +25,7 @@ function About() {
             efficacement et rapidement.
           </p>
           <ul className="flex flex-wrap justify-center items-center gap-3 w-full lg:w-3/4">
-            {chipList.map((chip, i) => (
+            {softSkillsList.map((chip, i) => (
               <li key={i}>
                 <Chip label={chip} />
               </li>
@@ -39,14 +34,10 @@ function About() {
         </div>
 
         <div className="flex justify-center items-center">
-          <img
-            alt="Me during work"
-            className="w-96 lg:w-[560px]"
-            src={AboutIllustration}
-          />
+          <Illustration alt="Me during work" src={AboutIllustration} />
         </div>
       </div>
-    </section>
+    </Section>
   );
 }
 

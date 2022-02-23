@@ -1,41 +1,21 @@
+import { socialsList } from "../../data";
+
 import ContactIllustration from "../../assets/images/contact-illustration.svg";
-import GithubIcon from "../../assets/icons/github.svg";
-import LinkedinIcon from "../../assets/icons/linkedin.svg";
-import TwitterIcon from "../../assets/icons/twitter.svg";
 
-import Divider from "../Divider";
-
-const socialsList = [
-  {
-    icon: GithubIcon,
-    label: "Github",
-    link: "https://github.com/Bakhaw",
-  },
-  {
-    icon: LinkedinIcon,
-    label: "Linkedin",
-    link: "https://www.linkedin.com/in/faissal-hattou/",
-  },
-  {
-    icon: TwitterIcon,
-    label: "Twitter",
-    link: "https://twitter.com/Faissal_Hattou",
-  },
-];
+import Divider from "../../components/Divider";
+import Illustration from "../../components/Illustration";
+import Section from "../../components/Section";
+import Title from "../../components/Title";
 
 function Contact() {
   return (
-    <section
-      id="contact"
-      className="flex flex-col justify-center items-center gap-20"
-    >
-      <h1 className="text-5xl lg:text-6xl">Contact</h1>
+    <Section id="contact">
+      <Title>Contact</Title>
 
       <div className="flex flex-col lg:flex-row justify-center items-center gap-20">
         <div className="flex justify-center items-center">
-          <img
+          <Illustration
             alt="Me waiting for your messages"
-            className="w-96 lg:w-[560px]"
             src={ContactIllustration}
           />
         </div>
@@ -72,7 +52,7 @@ function Contact() {
           </ul>
         </div>
       </div>
-    </section>
+    </Section>
   );
 }
 

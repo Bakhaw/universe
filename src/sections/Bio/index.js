@@ -1,28 +1,8 @@
-import GithubIcon from "../../assets/icons/github.svg";
-import LinkedinIcon from "../../assets/icons/linkedin.svg";
-import TwitterIcon from "../../assets/icons/twitter.svg";
+import { socialsList } from "../../data";
 
-import ArchButton from "../ArchButton";
-import Avatar from "../Avatar";
-import Divider from "../Divider";
-
-const socialsList = [
-  {
-    alt: "Github",
-    icon: GithubIcon,
-    link: "https://github.com/Bakhaw",
-  },
-  {
-    alt: "Linkedin",
-    icon: LinkedinIcon,
-    link: "https://www.linkedin.com/in/faissal-hattou/",
-  },
-  {
-    alt: "Twitter",
-    icon: TwitterIcon,
-    link: "https://twitter.com/Faissal_Hattou",
-  },
-];
+import ArchButton from "../../components/ArchButton";
+import Avatar from "../../components/Avatar";
+import Divider from "../../components/Divider";
 
 function Bio() {
   return (
@@ -48,7 +28,7 @@ function Bio() {
               <li key={i}>
                 <a href={social.link} rel="noreferrer" target="_blank">
                   <img
-                    alt={social.alt}
+                    alt={social.label}
                     className="p-1 border-2 rounded-xl"
                     src={social.icon}
                   />
