@@ -1,5 +1,6 @@
 import About from "./components/About";
 import Bio from "./components/Bio";
+import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
 import Skills from "./components/Skills";
 
@@ -12,6 +13,8 @@ function App() {
         <Bio />
         <About />
         <Skills />
+        {/* Here, do the "Work" section */}
+        <Contact />
       </div>
     </div>
   );

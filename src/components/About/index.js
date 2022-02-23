@@ -1,4 +1,4 @@
-import AboutIllustration from "../../assets/images/about-illustration.png";
+import AboutIllustration from "../../assets/images/about-illustration.svg";
 
 import Chip from "../Chip";
 
