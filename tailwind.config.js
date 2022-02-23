@@ -7,6 +7,7 @@ module.exports = {
       "very-dark-blue": "#2A2D43",
       "very-dark-blue-transparent": "rgba(42, 45, 67, 0.54)",
       "soft-red": "#e67071",
+      "white-transparent": "rgba(255, 255, 255, 0.25)",
     },
     fontFamily: {
       serif: ["ui-serif", "Bellefair"],

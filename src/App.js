@@ -1,6 +1,7 @@
 import About from "./components/About";
 import Bio from "./components/Bio";
 import Navbar from "./components/Navbar";
+import Skills from "./components/Skills";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <div className="flex flex-col gap-40 px-5 lg:px-20">
         <Bio />
         <About />
+        <Skills />
       </div>
     </div>
   );

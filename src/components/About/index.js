@@ -13,7 +13,7 @@ function About() {
   return (
     <section
       id="about"
-      className="flex flex-col justify-between items-center gap-6 min-h-screen"
+      className="flex flex-col justify-center items-center gap-20"
     >
       <h1 className="text-5xl lg:text-6xl">About</h1>
 
@@ -42,7 +42,6 @@ function About() {
           <img alt="Me during work" className="w-96" src={AboutIllustration} />
         </div>
       </div>
-      <div />
     </section>
   );
 }
