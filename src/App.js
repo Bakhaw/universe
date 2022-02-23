@@ -7,7 +7,9 @@ import Skills from "./components/Skills";
 function App() {
   return (
     <div className="font-serif text-very-dark-blue">
-      <Navbar />
+      <div id="top">
+        <Navbar />
+      </div>
 
       <div className="flex flex-col gap-40 px-5 lg:px-20">
         <Bio />
@@ -15,6 +17,10 @@ function App() {
         <Skills />
         {/* Here, do the "Work" section */}
         <Contact />
+      </div>
+
+      <div className="text-center py-20">
+        <a href="#top">Back to top</a>
       </div>
     </div>
   );
