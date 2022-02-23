@@ -13,6 +13,9 @@ module.exports = {
       serif: ["ui-serif", "Bellefair"],
     },
     extend: {
+      gridTemplateColumns: {
+        work: "1fr 3fr 1fr",
+      },
       height: {
         "bio-mobile": "calc(100vh - 76px)", // 76px = (MOBILE) Navbar height + Navbar padding-top
         bio: "calc(100vh - 116px)", // 116px = (> MOBILE) Navbar height + Navbar padding-top

@@ -5,6 +5,7 @@ import About from "./sections/About";
 import Bio from "./sections/Bio";
 import Contact from "./sections/Contact";
 import Skills from "./sections/Skills";
+import Work from "./sections/Work";
 
 function App() {
   return (
@@ -13,11 +14,11 @@ function App() {
         <Navbar />
       </div>
 
-      <div className="flex flex-col gap-40 px-5 lg:px-20">
+      <div className="flex flex-col gap-40 px-0 lg:px-0">
         <Bio />
         <About />
         <Skills />
-        {/* Here, do the "Work" section */}
+        <Work />
         <Contact />
       </div>
 
