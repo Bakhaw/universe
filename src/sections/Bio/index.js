@@ -1,3 +1,5 @@
+import { useTranslation } from "react-i18next";
+
 import { socialsList } from "../../data";
 
 import ArchButton from "../../components/ArchButton";
@@ -5,6 +7,8 @@ import Avatar from "../../components/Avatar";
 import Divider from "../../components/Divider";
 
 function Bio() {
+  const { t } = useTranslation();
+
   return (
     <section
       id="bio"
@@ -17,8 +21,8 @@ function Bio() {
         <div className="flex flex-col items-center gap-6 text-center">
           <div>
             <h1 className="text-5xl lg:text-8xl">Faïssal Hattou</h1>
-            <h2 className="text-3xl lg:text-4xl">web developer</h2>
-            <h2 className="text-3xl lg:text-4xl">all around the world</h2>
+            <h2 className="text-3xl lg:text-4xl">{t("bioFirstSubtitle")}</h2>
+            <h2 className="text-3xl lg:text-4xl">{t("bioSecondSubtitle")}</h2>
           </div>
 
           <Divider />

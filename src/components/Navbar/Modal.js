@@ -1,6 +1,12 @@
+import { useTranslation } from "react-i18next";
+
 import CloseIcon from "../../assets/icons/close.svg";
 
 function Navbar({ closeMenu, isOpen }) {
+  const { t } = useTranslation();
+
+  const navbarItems = t("navbarItems", { returnObjects: true });
+
   if (!isOpen) return null;
 
   return (
@@ -13,26 +19,13 @@ function Navbar({ closeMenu, isOpen }) {
       />
 
       <ul className="flex flex-col justify-center items-center self-center m-auto gap-24 text-light-grayish-blue text-4xl lg:text-7xl">
-        <li>
-          <a href="#about" onClick={closeMenu}>
-            about
-          </a>
-        </li>
-        <li>
-          <a href="#skills" onClick={closeMenu}>
-            skills
-          </a>
-        </li>
-        <li>
-          <a href="#work" onClick={closeMenu}>
-            work
-          </a>
-        </li>
-        <li>
-          <a href="#contact" onClick={closeMenu}>
-            contact
-          </a>
-        </li>
+        {navbarItems.map((item, i) => (
+          <li>
+            <a href={item.href} onClick={closeMenu}>
+              {item.label}
+            </a>
+          </li>
+        ))}
       </ul>
     </div>
   );

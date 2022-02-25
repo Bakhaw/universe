@@ -4,7 +4,6 @@ import { workList } from "../../data/workList";
 
 import Carousel from "../../components/Carousel";
 import Section from "../../components/Section";
-import Title from "../../components/Title";
 
 function Work() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -45,9 +44,7 @@ function Work() {
   const { activeSlide, nextSlide, prevSlide } = slides;
 
   return (
-    <Section id="work">
-      <Title>Work</Title>
-
+    <Section id="work" title="workTitle">
       <Carousel
         activeSlide={activeSlide}
         goToNextSlide={goToNextSlide}

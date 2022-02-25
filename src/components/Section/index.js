@@ -1,10 +1,14 @@
-function Section({ children, id }) {
+import Title from "../Title";
+
+function Section({ children, id, title }) {
   return (
     <section
-      className="flex flex-col justify-center items-center gap-20"
+      className="flex flex-col justify-center items-center gap-20 min-h-screen"
       id={id}
     >
-      {children}
+      <Title label={title} />
+
+      <div className="flex justify-center items-center">{children}</div>
     </section>
   );
 }

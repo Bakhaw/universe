@@ -7,23 +7,27 @@ import Contact from "./sections/Contact";
 import Skills from "./sections/Skills";
 import Work from "./sections/Work";
 
+import { StateProvider } from "./context";
+
 function App() {
   return (
-    <div className="font-serif text-very-dark-blue">
-      <div id="top">
-        <Navbar />
-      </div>
+    <StateProvider>
+      <div className="font-serif text-very-dark-blue">
+        <div id="top">
+          <Navbar />
+        </div>
 
-      <div className="flex flex-col gap-40">
-        <Bio />
-        <About />
-        <Skills />
-        <Work />
-        <Contact />
-      </div>
+        <div className="flex flex-col justify-center items-center">
+          <Bio />
+          <About />
+          <Skills />
+          <Work />
+          <Contact />
+        </div>
 
-      <BackToTop />
-    </div>
+        <BackToTop />
+      </div>
+    </StateProvider>
   );
 }
 

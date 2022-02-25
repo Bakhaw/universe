@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import MenuIcon from "../../assets/icons/menu.svg";
+import SwitchLanguageButton from "../SwitchLanguageButton";
 
 import Modal from "./Modal";
 
@@ -18,13 +19,14 @@ function Navbar() {
   return (
     <>
       {!isMenuOpen && (
-        <div className="pl-10 pt-10 lg:pl-20 lg:pt-20">
+        <div className="flex justify-between items-center px-10 pt-10 lg:px-20 lg:pt-20">
           <img
             alt="Menu"
             className="h-9 w-9 cursor-pointer"
             onClick={openMenu}
             src={MenuIcon}
           />
+          <SwitchLanguageButton />
         </div>
       )}
 
