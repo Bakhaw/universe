@@ -32,12 +32,12 @@ const resources = {
     aboutFirstParagraph:
       "Great code and JavaScript enthusiast, in serious relationship with React for 4 years without the flame ever going out.",
     aboutSecondParagraph:
-      "Starting a little later than the others on the starting line, this forged my autonomy and gave me the keys to learning on my own, efficiently and quickly.",
+      "Starting a little later than the others on the starting line, this forged my autonomy and gave me the keys to learn alone, efficiently and quickly.",
     aboutSoftSkills: [
       "curious professional",
       "team spirit",
       "force of proposal",
-      "and who always brings the slice of lemon in the Coke (the good mood)",
+      "and who always brings the lemon slice in the Coke (the good mood)",
     ],
 
     // Skills section
