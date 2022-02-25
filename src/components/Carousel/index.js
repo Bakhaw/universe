@@ -1,5 +1,4 @@
 import CarouselContent from "./CarouselContent";
-import CarouselHeader from "./CarouselHeader";
 
 function Carousel({
   activeSlide,
@@ -10,13 +9,10 @@ function Carousel({
 }) {
   return (
     <div className="flex flex-col justify-center items-center gap-10">
-      <CarouselHeader
+      <CarouselContent
         activeSlide={activeSlide}
         goToNextSlide={goToNextSlide}
         goToPreviousSlide={goToPreviousSlide}
-      />
-      <CarouselContent
-        activeSlide={activeSlide}
         nextSlide={nextSlide}
         prevSlide={prevSlide}
       />

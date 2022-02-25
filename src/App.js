@@ -17,7 +17,7 @@ function App() {
           <Navbar />
         </div>
 
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center gap-10">
           <Bio />
           <About />
           <Skills />

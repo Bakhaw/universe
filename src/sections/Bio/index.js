@@ -2,20 +2,15 @@ import { useTranslation } from "react-i18next";
 
 import { socialsList } from "../../data";
 
-import ArchButton from "../../components/ArchButton";
 import Avatar from "../../components/Avatar";
 import Divider from "../../components/Divider";
+import Section from "../../components/Section";
 
 function Bio() {
   const { t } = useTranslation();
 
   return (
-    <section
-      id="bio"
-      className="flex flex-col justify-between h-bio-mobile lg:h-bio"
-    >
-      {/* Terrible practice to add extra item so my content is centered with space-between :clown: */}
-      <div />
+    <Section id="bio" useBioHeight>
       <div className="flex flex-col justify-center items-center gap-6 lg:gap-24 lg:flex-row">
         <Avatar />
         <div className="flex flex-col items-center gap-6 text-center">
@@ -42,11 +37,7 @@ function Bio() {
           </ul>
         </div>
       </div>
-
-      <div className="flex justify-center items-center">
-        <ArchButton />
-      </div>
-    </section>
+    </Section>
   );
 }
 

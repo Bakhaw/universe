@@ -3,7 +3,7 @@ import ArrowRightIcon from "../../assets/icons/arrow-right.svg";
 
 function CarouselHeader({ activeSlide, goToNextSlide, goToPreviousSlide }) {
   return (
-    <div className="flex flex-col justify-between items-center gap-2 lg:gap-10 w-[350px] lg:w-[600px]">
+    <div className="flex flex-col justify-between items-center gap-2 lg:gap-10 w-full">
       <div className="flex justify-between items-center gap-4 w-full">
         <img
           alt="Arrow to the left"

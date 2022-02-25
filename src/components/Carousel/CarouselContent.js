@@ -1,29 +1,25 @@
-function CarouselContent({ activeSlide, nextSlide, prevSlide }) {
+import ActiveSlide from "./ActiveSlide";
+import NextSlide from "./NextSlide";
+import PreviousSlide from "./PreviousSlide";
+
+function CarouselContent({
+  activeSlide,
+  goToNextSlide,
+  goToPreviousSlide,
+  nextSlide,
+  prevSlide,
+}) {
   return (
-    <ul className="grid grid-cols-work justify-between items-center h-full overflow-hidden">
-      <li className="translate-x-[-50%] h-3/4">
-        <img
-          alt={prevSlide.img.src}
-          className="object-cover object-top h-full w-full"
-          src={prevSlide.img.src}
-        />
-      </li>
+    <ul className="grid grid-cols-work justify-center items-end h-full overflow-hidden">
+      <PreviousSlide slide={prevSlide} />
 
-      <li className="min-w-[350px]">
-        <img
-          alt={activeSlide.img.src}
-          className="object-cover object-top max-w-full h-auto"
-          src={activeSlide.img.src}
-        />
-      </li>
+      <ActiveSlide
+        goToNextSlide={goToNextSlide}
+        goToPreviousSlide={goToPreviousSlide}
+        slide={activeSlide}
+      />
 
-      <li className="translate-x-[50%] h-3/4">
-        <img
-          alt={nextSlide.img.src}
-          className="object-cover object-top h-full w-full"
-          src={nextSlide.img.src}
-        />
-      </li>
+      <NextSlide slide={nextSlide} />
     </ul>
   );
 }
