@@ -3,8 +3,10 @@ import GeniusImg from "../assets/images/work/genius.png";
 import GlobeImg from "../assets/images/work/globe.png";
 import NitroStuffsImg from "../assets/images/work/nitrostuffs.png";
 import RickAndMortyImg from "../assets/images/work/rickandmorty.png";
+import ServicesPersoImg from "../assets/images/work/servicesperso.png";
 import TwitchImg from "../assets/images/work/twitch.png";
 import UnsplashImg from "../assets/images/work/unsplash.png";
+import VPGImg from "../assets/images/work/vpg.png";
 import YoutubeImg from "../assets/images/work/youtube.png";
 
 export const workList = [
@@ -132,5 +134,27 @@ export const workList = [
     links: ["globe", "fh-globe"],
     tags: ["react", "material-ui", "styled-components", "three js"],
     title: "Globe",
+  },
+  {
+    date: "2021",
+    description: "Association",
+    img: {
+      alt: "Services Perso",
+      src: ServicesPersoImg,
+    },
+    links: ["https://servicesperso.fr/"],
+    tags: ["wordpress", "OVH"],
+    title: "Services Perso",
+  },
+  {
+    date: "2020",
+    description: "E-sport FIFA Platform",
+    img: {
+      alt: "Virtual Pro Gaming",
+      src: VPGImg,
+    },
+    links: ["https://virtualprogaming.com/"],
+    tags: ["react", "typescript", "hooks", "api"],
+    title: "Virtual Pro Gaming",
   },
 ];
