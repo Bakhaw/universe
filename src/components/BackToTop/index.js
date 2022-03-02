@@ -3,9 +3,16 @@ import { useTranslation } from "react-i18next";
 function BackToTop() {
   const { t } = useTranslation();
 
+  function handleButtonClick() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }
+
   return (
     <div className="text-center py-20">
-      <a href="#top">{t("backToTop")}</a>
+      <button onClick={handleButtonClick}>{t("backToTop")}</button>
     </div>
   );
 }

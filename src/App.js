@@ -13,9 +13,7 @@ function App() {
   return (
     <StateProvider>
       <div className="font-serif text-very-dark-blue">
-        <div id="top">
-          <Navbar />
-        </div>
+        <Navbar />
 
         <div className="flex flex-col justify-center items-center gap-10">
           <Bio />
