@@ -1,6 +1,7 @@
 import DuragGG from "../assets/images/work/durag-gg.png";
 import GeniusImg from "../assets/images/work/genius.png";
 import GlobeImg from "../assets/images/work/globe.png";
+import NASAImg from "../assets/images/work/nasa.png";
 import NitroStuffsImg from "../assets/images/work/nitrostuffs.png";
 import RickAndMortyImg from "../assets/images/work/rickandmorty.png";
 import ServicesPersoImg from "../assets/images/work/servicesperso.png";
@@ -136,8 +137,19 @@ export const workList = [
     title: "Globe",
   },
   {
+    date: "2019",
+    description: "Discover NASA daily shots",
+    img: {
+      alt: "Nasa app",
+      src: NASAImg,
+    },
+    links: ["nasa", "fh-nasa"],
+    tags: ["react", "webpack", "sass", "nasa api"],
+    title: "NASA Museum",
+  },
+  {
     date: "2021",
-    description: "Association",
+    description: "Association offering personal services",
     img: {
       alt: "Services Perso",
       src: ServicesPersoImg,
