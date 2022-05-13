@@ -5,7 +5,7 @@ module.exports = {
       "light-grayish-cyan": "#eafaf9",
       "light-grayish-blue": "#ecf2f9",
       "very-dark-blue": "#2A2D43",
-      "very-dark-blue-transparent": "rgba(42, 45, 67, 0.54)",
+      "very-dark-blue-transparent": "rgba(42, 45, 67, 0.24)",
       "soft-red": "#e67071",
       "white-transparent": "rgba(255, 255, 255, 0.25)",
     },
